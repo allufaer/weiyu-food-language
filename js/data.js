@@ -352,6 +352,256 @@ window.DATA = {
         { zh: '冷藏后撒糖，用喷枪烤出焦糖壳。', en: 'Chill, dust sugar, torch to a caramel crust.', ja: '冷やして砂糖を振り、バーナーで焼き色を。' }
       ],
       vocab: ['sugar', 'egg', 'bake', 'milk']
+    },
+    {
+      id: 'r-mapo-tofu', emoji: '🌶️', color: '#FFD6CC', accent: '#C8402B',
+      name: { zh: '麻婆豆腐', en: 'Mapo Tofu', ja: 'マーボー豆腐' },
+      cuisine: '中餐', tags: ['川菜', '下饭'], difficulty: 2, time: 25, servings: 2,
+      unlockXp: 0, xpReward: 20,
+      intro: {
+        zh: '麻辣鲜香的川菜代表，嫩豆腐裹满红油肉末。',
+        en: 'A Sichuan classic — silken tofu in a spicy, numbing meat sauce.',
+        ja: '四川の代表格。痺れる辛さと豆腐のやわらかさ。'
+      },
+      ingredients: [
+        { zh: '嫩豆腐', en: 'tofu', ja: '豆腐', amount: '1 块 / 1 block / 1丁' },
+        { zh: '牛肉末', en: 'beef', ja: '牛肉', amount: '100g / 100g / 100g' },
+        { zh: '大蒜', en: 'garlic', ja: 'ニンニク', amount: '2 瓣 / 2 / 2片' },
+        { zh: '辣椒', en: 'chili', ja: '唐辛子', amount: '适量 / to taste / 適量' },
+        { zh: '葱', en: 'scallion', ja: 'ねぎ', amount: '适量 / to taste / 適量' }
+      ],
+      steps: [
+        { zh: '豆腐切小块，用淡盐水焯一下去豆腥。', en: 'Cube tofu; blanch in salted water.', ja: '豆腐を角切りにし、塩茹でする。' },
+        { zh: '热油炒香蒜末与辣椒，下牛肉末炒散。', en: 'Sauté garlic and chili; brown the beef.', ja: 'ニンニクと唐辛子を炒め、牛肉を炒める。' },
+        { zh: '加入豆瓣酱与少许水煮开，放入豆腐。', en: 'Add doubanjiang and a little water; add tofu.', ja: '豆板醤と水を加えて煮立て、豆腐を入れる。' },
+        { zh: '勾薄芡，撒花椒粉与葱花出锅。', en: 'Thicken with starch; finish with Sichuan pepper and scallion.', ja: 'とろみをつけ、花椒とねぎを散らす。' }
+      ],
+      vocab: ['tofu', 'beef', 'garlic', 'chili', 'scallion', 'spicy', 'stir-fry']
+    },
+    {
+      id: 'r-egg-fried-rice', emoji: '🍚', color: '#FFE8CC', accent: '#D4861A',
+      name: { zh: '蛋炒饭', en: 'Egg Fried Rice', ja: 'チャーハン' },
+      cuisine: '中餐', tags: ['主食', '快手'], difficulty: 1, time: 15, servings: 1,
+      unlockXp: 0, xpReward: 20,
+      intro: {
+        zh: '粒粒分明的炒饭，蛋香裹住每一颗米。',
+        en: 'Pillowy fried rice with every grain coated in egg.',
+        ja: 'パラパラの炒飯。卵の香りがご飯に絡む。'
+      },
+      ingredients: [
+        { zh: '米饭', en: 'rice', ja: 'ご飯', amount: '1 碗 / 1 bowl / 1杯' },
+        { zh: '鸡蛋', en: 'egg', ja: '卵', amount: '2 个 / 2 / 2個' },
+        { zh: '葱', en: 'scallion', ja: 'ねぎ', amount: '1 根 / 1 / 1本' },
+        { zh: '盐', en: 'salt', ja: '塩', amount: '少许 / a pinch / 少々' },
+        { zh: '酱油', en: 'soy sauce', ja: '醤油', amount: '少许 / a splash / 少々' }
+      ],
+      steps: [
+        { zh: '鸡蛋打散，热锅炒至半熟盛出。', en: 'Beat eggs; scramble until half-set, set aside.', ja: '卵を溶き、半熟に炒めて取り出す。' },
+        { zh: '米饭下锅炒散，炒出米香。', en: 'Add rice and stir-fry until fluffy.', ja: 'ご飯を加え、パラパラになるまで炒める。' },
+        { zh: '倒回鸡蛋，加盐与酱油炒匀。', en: 'Return eggs; season with salt and soy sauce.', ja: '卵を戻し、塩と醤油で味を整える。' },
+        { zh: '撒葱花翻炒几下出锅。', en: 'Toss in scallions and serve.', ja: 'ねぎを加えて仕上げる。' }
+      ],
+      vocab: ['rice', 'egg', 'scallion', 'salt', 'soy sauce', 'stir-fry']
+    },
+    {
+      id: 'r-chawanmushi', emoji: '🥚', color: '#F3EAD0', accent: '#A8842E',
+      name: { zh: '日式茶碗蒸', en: 'Chawanmushi', ja: '茶碗蒸し' },
+      cuisine: '日料', tags: ['蒸物', '前菜'], difficulty: 2, time: 30, servings: 2,
+      unlockXp: 0, xpReward: 20,
+      intro: {
+        zh: '滑嫩如布丁的蒸蛋羹，藏着虾仁与香菇。',
+        en: 'Silky steamed egg custard hiding shrimp and mushrooms.',
+        ja: 'プルンとした茶碗蒸し。海老とキノコが隠れている。'
+      },
+      ingredients: [
+        { zh: '鸡蛋', en: 'egg', ja: '卵', amount: '3 个 / 3 / 3個' },
+        { zh: '虾', en: 'shrimp', ja: '海老', amount: '4 只 / 4 / 4尾' },
+        { zh: '蘑菇', en: 'mushroom', ja: 'キノコ', amount: '少许 / a few / 少々' },
+        { zh: '高汤', en: 'dashi stock', ja: 'だし', amount: '300ml / 300ml / 300ml' },
+        { zh: '酱油', en: 'soy sauce', ja: '醤油', amount: '1 勺 / 1 tbsp / 大さじ1' }
+      ],
+      steps: [
+        { zh: '鸡蛋打散，加入高汤与酱油过筛。', en: 'Whisk eggs with dashi and soy sauce; strain.', ja: '卵を溶き、だしと醤油を混ぜて漉す。' },
+        { zh: '茶碗中放入虾仁与蘑菇。', en: 'Place shrimp and mushrooms in bowls.', ja: '茶碗に海老とキノコを入れる。' },
+        { zh: '倒入蛋液，盖上保鲜膜。', en: 'Pour in the egg mixture; cover with wrap.', ja: '卵液を注ぎ、ラップをかける。' },
+        { zh: '中火蒸 15 分钟至凝固。', en: 'Steam over medium heat 15 minutes until set.', ja: '中火で15分、固まるまで蒸す。' }
+      ],
+      vocab: ['egg', 'shrimp', 'mushroom', 'soy sauce', 'steam']
+    },
+    {
+      id: 'r-french-onion-soup', emoji: '🧅', color: '#F0E0C4', accent: '#9A6B2B',
+      name: { zh: '法式洋葱汤', en: 'French Onion Soup', ja: 'フレンチオニオンスープ' },
+      cuisine: '西餐', tags: ['汤品'], difficulty: 3, time: 60, servings: 2,
+      unlockXp: 180, xpReward: 40,
+      intro: {
+        zh: '焦糖洋葱与牛肉高汤，盖上融化的芝士。',
+        en: 'Caramelized onions in beef broth, topped with melted cheese.',
+        ja: '飴色玉ねぎとビーフブロス。チーズを溶かして。'
+      },
+      ingredients: [
+        { zh: '洋葱', en: 'onion', ja: '玉ねぎ', amount: '4 个 / 4 / 4個' },
+        { zh: '牛肉高汤', en: 'beef stock', ja: 'ビーフスープ', amount: '800ml / 800ml / 800ml' },
+        { zh: '奶酪', en: 'cheese', ja: 'チーズ', amount: '适量 / to taste / 適量' },
+        { zh: '黄油', en: 'butter', ja: 'バター', amount: '20g / 20g / 20g' },
+        { zh: '面包', en: 'bread', ja: 'パン', amount: '2 片 / 2 slices / 2枚' }
+      ],
+      steps: [
+        { zh: '洋葱切丝，用黄油小火炒至焦糖色。', en: 'Slice onions; caramelize slowly in butter.', ja: '玉ねぎを薄切りにし、バターで弱火から炒める。' },
+        { zh: '倒入牛肉高汤，小火慢炖 30 分钟。', en: 'Add beef stock; simmer 30 minutes.', ja: 'スープを加え、弱火で30分煮込む。' },
+        { zh: '盛入烤碗，放面包片与奶酪。', en: 'Ladle into bowls; top with bread and cheese.', ja: '器に注ぎ、パンとチーズをのせる。' },
+        { zh: '烤箱烤至奶酪融化冒泡。', en: 'Broil until cheese is melted and bubbly.', ja: 'オーブンでチーズが溶けるまで焼く。' }
+      ],
+      vocab: ['onion', 'beef', 'cheese', 'butter', 'simmer', 'bake']
+    },
+    {
+      id: 'r-mango-sticky-rice', emoji: '🥭', color: '#FFF2C4', accent: '#E0A91C',
+      name: { zh: '芒果糯米饭', en: 'Mango Sticky Rice', ja: 'マンゴースティッキーライス' },
+      cuisine: '东南亚', tags: ['甜点', '泰国'], difficulty: 2, time: 40, servings: 2,
+      unlockXp: 260, xpReward: 40,
+      intro: {
+        zh: '椰浆糯米饭配新鲜芒果，热带的甜蜜。',
+        en: 'Coconut sticky rice with fresh mango — tropical sweetness.',
+        ja: 'ココナッツのもち米にマンゴー。トロピカルな甘さ。'
+      },
+      ingredients: [
+        { zh: '糯米', en: 'sticky rice', ja: 'もち米', amount: '200g / 200g / 200g' },
+        { zh: '椰浆', en: 'coconut milk', ja: 'ココナッツミルク', amount: '300ml / 300ml / 300ml' },
+        { zh: '芒果', en: 'mango', ja: 'マンゴー', amount: '2 个 / 2 / 2個' },
+        { zh: '糖', en: 'sugar', ja: '砂糖', amount: '2 勺 / 2 tbsp / 大さじ2' },
+        { zh: '芝麻', en: 'sesame', ja: 'ごま', amount: '少许 / a pinch / 少々' }
+      ],
+      steps: [
+        { zh: '糯米浸泡 2 小时后蒸熟。', en: 'Soak rice 2 hours; steam until cooked.', ja: 'もち米を2時間浸水し、蒸す。' },
+        { zh: '椰浆加糖煮至微沸，拌入米饭。', en: 'Simmer coconut milk with sugar; fold into rice.', ja: 'ココナッツミルクと砂糖を温め、ご飯に混ぜる。' },
+        { zh: '芒果切块，与糯米饭一同装盘。', en: 'Cube mango; plate with the rice.', ja: 'マンゴーを切り、もち米と盛り付ける。' },
+        { zh: '淋上椰浆，撒芝麻享用。', en: 'Drizzle coconut milk and sesame.', ja: 'ココナッツミルクとごまをかける。' }
+      ],
+      vocab: ['rice', 'milk', 'sugar', 'sweet', 'steam']
+    },
+    {
+      id: 'r-bibimbap', emoji: '🍲', color: '#FFE0D0', accent: '#C7572F',
+      name: { zh: '石锅拌饭', en: 'Bibimbap', ja: 'ビビンバ' },
+      cuisine: '韩餐', tags: ['主食', '拌菜'], difficulty: 2, time: 35, servings: 1,
+      unlockXp: 320, xpReward: 45,
+      intro: {
+        zh: '蔬菜、肉末与煎蛋在热石锅里拌开，锅巴香脆。',
+        en: 'Veggies, beef and a fried egg tossed in a sizzling stone bowl.',
+        ja: '野菜と肉、目玉焼きを石鍋で混ぜる。焦げ目が香ばしい。'
+      },
+      ingredients: [
+        { zh: '米饭', en: 'rice', ja: 'ご飯', amount: '1 碗 / 1 bowl / 1杯' },
+        { zh: '牛肉末', en: 'beef', ja: '牛肉', amount: '100g / 100g / 100g' },
+        { zh: '鸡蛋', en: 'egg', ja: '卵', amount: '1 个 / 1 / 1個' },
+        { zh: '什锦蔬菜', en: 'vegetable', ja: '野菜', amount: '适量 / to taste / 適量' },
+        { zh: '韩式辣酱', en: 'gochujang', ja: 'コチュジャン', amount: '1 勺 / 1 tbsp / 大さじ1' }
+      ],
+      steps: [
+        { zh: '石锅刷油，铺上米饭。', en: 'Oil a stone bowl; add rice.', ja: '石鍋に油を塗り、ご飯を敷く。' },
+        { zh: '分别炒熟牛肉末与蔬菜。', en: 'Stir-fry beef and veggies separately.', ja: '牛肉と野菜を別々に炒める。' },
+        { zh: '摆上蔬菜、牛肉，中间放煎蛋。', en: 'Arrange veggies and beef; top with a fried egg.', ja: '野菜と肉を並べ、中央に目玉焼きを。' },
+        { zh: '加辣酱拌匀，趁锅巴香脆时吃。', en: 'Add gochujang; toss and eat while crispy.', ja: 'コチュジャンを混ぜ、焦げ目のうちに。' }
+      ],
+      vocab: ['rice', 'beef', 'egg', 'vegetable', 'spicy', 'mix', 'stir-fry']
+    },
+    {
+      id: 'r-carbonara', emoji: '🍝', color: '#F7E8D0', accent: '#B07A2E',
+      name: { zh: '意式卡邦尼', en: 'Spaghetti Carbonara', ja: 'カルボナーラ' },
+      cuisine: '西餐', tags: ['意面', '主菜'], difficulty: 3, time: 30, servings: 2,
+      unlockXp: 360, xpReward: 45,
+      intro: {
+        zh: '蛋黄、奶酪与培根的浓郁裹满意面，无奶油的正宗做法。',
+        en: 'Rich egg, cheese and pancetta coating pasta — authentic, no cream.',
+        ja: '卵とチーズ、パンチェッタの濃厚ソース。クリーム不使用。'
+      },
+      ingredients: [
+        { zh: '意面', en: 'spaghetti', ja: 'スパゲッティ', amount: '200g / 200g / 200g' },
+        { zh: '培根', en: 'pancetta', ja: 'パンチェッタ', amount: '100g / 100g / 100g' },
+        { zh: '鸡蛋', en: 'egg', ja: '卵', amount: '3 个 / 3 / 3個' },
+        { zh: '帕玛森芝士', en: 'cheese', ja: 'チーズ', amount: '50g / 50g / 50g' },
+        { zh: '黑胡椒', en: 'black pepper', ja: '黒胡椒', amount: '适量 / to taste / 適量' }
+      ],
+      steps: [
+        { zh: '意面煮至八分熟，保留一杯煮面水。', en: 'Cook pasta al dente; reserve a cup of pasta water.', ja: '麺を茹で、茹で汁を1杯取っておく。' },
+        { zh: '培根切条煎至酥脆。', en: 'Slice pancetta; crisp in a pan.', ja: 'パンチェッタを短冊にし、カリッと焼く。' },
+        { zh: '蛋黄与芝士、黑胡椒拌匀。', en: 'Whisk yolks with cheese and pepper.', ja: '卵黄とチーズ、黒胡椒を混ぜる。' },
+        { zh: '离火拌入意面与培根，加面水调至顺滑。', en: 'Off heat, toss pasta and pancetta; loosen with pasta water.', ja: '火を止めて麺と和え、茹で汁でのばす。' }
+      ],
+      vocab: ['noodle', 'egg', 'cheese', 'meat', 'mix']
+    },
+    {
+      id: 'r-pho', emoji: '🍜', color: '#F0E6D0', accent: '#9A7A3A',
+      name: { zh: '越南河粉', en: 'Vietnamese Pho', ja: 'フォー' },
+      cuisine: '东南亚', tags: ['汤粉', '越南'], difficulty: 3, time: 60, servings: 2,
+      unlockXp: 400, xpReward: 50,
+      intro: {
+        zh: '清澈牛骨高汤，配上九层塔与青柠的清爽。',
+        en: 'Clear beef bone broth, brightened with basil and lime.',
+        ja: '澄んだ牛骨スープにバジルとライムを添えて。'
+      },
+      ingredients: [
+        { zh: '河粉', en: 'rice noodles', ja: 'フォー麺', amount: '200g / 200g / 200g' },
+        { zh: '牛肉', en: 'beef', ja: '牛肉', amount: '200g / 200g / 200g' },
+        { zh: '洋葱', en: 'onion', ja: '玉ねぎ', amount: '1 个 / 1 / 1個' },
+        { zh: '生姜', en: 'ginger', ja: '生姜', amount: '1 块 / 1 / 1かけ' },
+        { zh: '青柠', en: 'lime', ja: 'ライム', amount: '1 个 / 1 / 1個' }
+      ],
+      steps: [
+        { zh: '洋葱与姜烤香，与牛骨熬汤 1 小时。', en: 'Char onion and ginger; simmer with beef bones 1 hour.', ja: '玉ねぎと生姜を炙り、牛骨と1時間煮込む。' },
+        { zh: '河粉泡软后煮熟，盛入碗中。', en: 'Soak and cook noodles; place in bowls.', ja: '麺を戻して茹で、器に入れる。' },
+        { zh: '铺上薄片牛肉，浇入滚烫高汤。', en: 'Top with thin beef slices; pour in boiling broth.', ja: '薄切り肉をのせ、熱々のスープをかける。' },
+        { zh: '配豆芽、九层塔与青柠上桌。', en: 'Serve with bean sprouts, basil and lime.', ja: 'もやしとバジル、ライムを添える。' }
+      ],
+      vocab: ['noodle', 'beef', 'onion', 'ginger', 'simmer']
+    },
+    {
+      id: 'r-tonkotsu-ramen', emoji: '🍜', color: '#F5E6CC', accent: '#B07828',
+      name: { zh: '日式豚骨拉面', en: 'Tonkotsu Ramen', ja: '豚骨ラーメン' },
+      cuisine: '日料', tags: ['面食', '主菜'], difficulty: 3, time: 90, servings: 2,
+      unlockXp: 480, xpReward: 55,
+      intro: {
+        zh: '奶白浓郁的豚骨汤，配叉烧与溏心蛋。',
+        en: 'Rich, milky pork broth with chashu and a soft-boiled egg.',
+        ja: '濃厚で白濁した豚骨スープにチャーシューと半熟卵。'
+      },
+      ingredients: [
+        { zh: '拉面', en: 'ramen noodles', ja: 'ラーメン', amount: '2 人份 / 2 servings / 2玉' },
+        { zh: '猪骨', en: 'pork bones', ja: '豚骨', amount: '500g / 500g / 500g' },
+        { zh: '鸡蛋', en: 'egg', ja: '卵', amount: '2 个 / 2 / 2個' },
+        { zh: '叉烧肉', en: 'pork', ja: 'チャーシュー', amount: '适量 / to taste / 適量' },
+        { zh: '葱', en: 'scallion', ja: 'ねぎ', amount: '适量 / to taste / 適量' }
+      ],
+      steps: [
+        { zh: '猪骨焯水后，大火熬煮 3 小时至奶白。', en: 'Blanch bones; boil hard 3 hours until milky.', ja: '豚骨を下茹でし、3時間強火で白濁させる。' },
+        { zh: '鸡蛋煮 6 分钟，过冰水剥壳腌制。', en: 'Boil eggs 6 min; ice-bath, peel and marinate.', ja: '卵を6分茹で、冷水で殻をむいて漬ける。' },
+        { zh: '拉面煮熟，盛入碗中。', en: 'Cook noodles; place in bowls.', ja: '麺を茹でて器に入れる。' },
+        { zh: '浇上豚骨汤，铺叉烧、溏心蛋与葱花。', en: 'Ladle broth; top with chashu, egg and scallion.', ja: 'スープをかけ、チャーシューと半熟卵、ねぎを。' }
+      ],
+      vocab: ['noodle', 'egg', 'meat', 'scallion', 'simmer']
+    },
+    {
+      id: 'r-souffle-pancake', emoji: '🥞', color: '#FFE7D6', accent: '#D4773A',
+      name: { zh: '舒芙蕾松饼', en: 'Soufflé Pancake', ja: 'スフレパンケーキ' },
+      cuisine: '西餐', tags: ['甜点', '早餐'], difficulty: 3, time: 35, servings: 2,
+      unlockXp: 540, xpReward: 55,
+      intro: {
+        zh: '云朵般蓬松的厚松饼，晃动着空气感。',
+        en: 'Cloud-like fluffy thick pancakes, jiggling with air.',
+        ja: '雲のようにふわふわの厚いパンケーキ。'
+      },
+      ingredients: [
+        { zh: '面粉', en: 'flour', ja: '小麦粉', amount: '60g / 60g / 60g' },
+        { zh: '鸡蛋', en: 'egg', ja: '卵', amount: '2 个 / 2 / 2個' },
+        { zh: '牛奶', en: 'milk', ja: '牛乳', amount: '40ml / 40ml / 40ml' },
+        { zh: '糖', en: 'sugar', ja: '砂糖', amount: '20g / 20g / 20g' },
+        { zh: '黄油', en: 'butter', ja: 'バター', amount: '少许 / a little / 少々' }
+      ],
+      steps: [
+        { zh: '蛋黄加牛奶拌匀，筛入面粉。', en: 'Whisk yolks with milk; sift in flour.', ja: '卵黄と牛乳を混ぜ、小麦粉をふるう。' },
+        { zh: '蛋白分次加糖打发至硬性发泡。', en: 'Whip egg whites with sugar to stiff peaks.', ja: '卵白に砂糖を加え、角が立つまで泡立てる。' },
+        { zh: '分次拌入面糊，保持蓬松。', en: 'Fold into batter in batches; keep fluffy.', ja: '数回に分けて混ぜ、ふんわりさせる。' },
+        { zh: '小火慢煎至两面定型，配奶油蜂蜜。', en: 'Cook slowly on low heat; serve with cream and honey.', ja: '弱火で両面焼き、クリームとハチミツで。' }
+      ],
+      vocab: ['flour', 'egg', 'milk', 'sugar', 'butter', 'mix', 'bake']
     }
   ],
 
@@ -563,6 +813,145 @@ window.DATA = {
         { zh: '挤入橙皮精油，放入大冰块。', en: 'Express orange peel; add a large ice cube.', ja: 'オレンジの皮を搾り、大きな氷を入れる。' }
       ],
       vocab: ['bitter', 'mix', 'water']
+    },
+    {
+      id: 'c-moscow-mule', emoji: '🍺', color: '#E6F0D0', accent: '#6A8A2E',
+      name: { zh: '莫斯科骡子', en: 'Moscow Mule', ja: 'モスコミュール' },
+      category: '经典', tags: ['伏特加', '姜味'], difficulty: 1, time: 5,
+      unlockXp: 0, xpReward: 15,
+      intro: {
+        zh: '伏特加、姜汁啤酒与青柠，铜杯里的辛香。',
+        en: 'Vodka, ginger beer and lime served in a copper mug.',
+        ja: 'ウォッカとジンジャービール、ライム。銅のマグで。'
+      },
+      ingredients: [
+        { zh: '伏特加', en: 'vodka', ja: 'ウォッカ', amount: '45ml / 45ml / 45ml' },
+        { zh: '姜汁啤酒', en: 'ginger beer', ja: 'ジンジャービール', amount: '120ml / 120ml / 120ml' },
+        { zh: '青柠', en: 'lime', ja: 'ライム', amount: '半个 / ½ / 1/2個' },
+        { zh: '薄荷叶', en: 'mint', ja: 'ミント', amount: '少许 / a sprig / 少々' }
+      ],
+      steps: [
+        { zh: '铜杯加满冰，倒入伏特加与青柠汁。', en: 'Fill a mug with ice; add vodka and lime.', ja: '氷を入れ、ウォッカとライムを注ぐ。' },
+        { zh: '注满姜汁啤酒，轻搅。', en: 'Top with ginger beer; stir gently.', ja: 'ジンジャービールで満たし、軽く混ぜる。' },
+        { zh: '用薄荷与青柠角装饰。', en: 'Garnish with mint and lime.', ja: 'ミントとライムで飾る。' }
+      ],
+      vocab: ['lemon', 'juice', 'mix']
+    },
+    {
+      id: 'c-cosmopolitan', emoji: '🌸', color: '#FBD6E0', accent: '#C24B6E',
+      name: { zh: '大都会', en: 'Cosmopolitan', ja: 'コスモポリタン' },
+      category: '果味', tags: ['伏特加', '酸'], difficulty: 2, time: 8,
+      unlockXp: 140, xpReward: 30,
+      intro: {
+        zh: '粉红的伏特加调酒，蔓越莓与青柠的酸甜。',
+        en: 'A pink vodka cocktail — cranberry and lime tang.',
+        ja: 'ピンクのウォッカカクテル。クランベリーとライム。'
+      },
+      ingredients: [
+        { zh: '伏特加', en: 'vodka', ja: 'ウォッカ', amount: '45ml / 45ml / 45ml' },
+        { zh: '蔓越莓汁', en: 'cranberry juice', ja: 'クランベリージュース', amount: '30ml / 30ml / 30ml' },
+        { zh: '青柠汁', en: 'lime juice', ja: 'ライムジュース', amount: '15ml / 15ml / 15ml' },
+        { zh: '橙味利口酒', en: 'triple sec', ja: 'トリプルセック', amount: '15ml / 15ml / 15ml' }
+      ],
+      steps: [
+        { zh: '所有材料与冰块摇匀。', en: 'Shake all ingredients with ice.', ja: '材料と氷をシェイクする。' },
+        { zh: '滤入冰镇的马天尼杯。', en: 'Strain into a chilled martini glass.', ja: '冷やしたグラスに注ぐ。' },
+        { zh: '用橙皮或青柠装饰。', en: 'Garnish with orange or lime peel.', ja: '皮で飾る。' }
+      ],
+      vocab: ['juice', 'lemon', 'mix', 'glass']
+    },
+    {
+      id: 'c-whisky-sour', emoji: '🥃', color: '#F2D8B0', accent: '#A8681C',
+      name: { zh: '威士忌酸', en: 'Whisky Sour', ja: 'ウイスキーサワー' },
+      category: '经典', tags: ['威士忌', '酸'], difficulty: 2, time: 8,
+      unlockXp: 160, xpReward: 30,
+      intro: {
+        zh: '威士忌、柠檬汁与糖的经典平衡，可加蛋清做泡沫。',
+        en: 'A classic balance of whisky, lemon and sugar — optional egg foam.',
+        ja: 'ウイスキーとレモン、砂糖のクラシック。'
+      },
+      ingredients: [
+        { zh: '威士忌', en: 'whisky', ja: 'ウイスキー', amount: '45ml / 45ml / 45ml' },
+        { zh: '柠檬汁', en: 'lemon juice', ja: 'レモンジュース', amount: '30ml / 30ml / 30ml' },
+        { zh: '糖浆', en: 'sugar syrup', ja: 'シュガーシロップ', amount: '20ml / 20ml / 20ml' },
+        { zh: '蛋清', en: 'egg white', ja: '卵白', amount: '少许 / a little / 少々' }
+      ],
+      steps: [
+        { zh: '不加冰先干摇，让蛋清乳化。', en: 'Dry-shake without ice to emulsify egg white.', ja: '氷なしでシェイクし、卵白を泡立てる。' },
+        { zh: '加冰再摇匀至冰凉。', en: 'Add ice and shake until chilled.', ja: '氷を加え、冷えるまでシェイク。' },
+        { zh: '滤入杯中，柠檬皮装饰。', en: 'Strain into a glass; garnish with lemon.', ja: 'グラスに注ぎ、レモンを添える。' }
+      ],
+      vocab: ['lemon', 'sugar', 'egg', 'mix']
+    },
+    {
+      id: 'c-aperol-spritz', emoji: '🍊', color: '#FBE0A8', accent: '#E0861C',
+      name: { zh: '阿佩罗橙光', en: 'Aperol Spritz', ja: 'アペロールスプリッツ' },
+      category: '经典', tags: ['开胃', '起泡'], difficulty: 1, time: 5,
+      unlockXp: 240, xpReward: 30,
+      intro: {
+        zh: '橙色的微苦开胃酒，配气泡酒与苏打，夏日之选。',
+        en: 'A bittersweet orange aperitif with bubbly wine and soda.',
+        ja: 'オレンジのほろ苦カクテル。泡とソーダで夏にぴったり。'
+      },
+      ingredients: [
+        { zh: '阿佩罗', en: 'aperol', ja: 'アペロール', amount: '60ml / 60ml / 60ml' },
+        { zh: '起泡酒', en: 'sparkling wine', ja: 'スパークリングワイン', amount: '90ml / 90ml / 90ml' },
+        { zh: '苏打水', en: 'soda water', ja: 'ソーダ', amount: '30ml / 30ml / 30ml' },
+        { zh: '橙子', en: 'orange', ja: 'オレンジ', amount: '1 片 / 1 slice / 1枚' }
+      ],
+      steps: [
+        { zh: '杯中加冰，倒入阿佩罗。', en: 'Add ice; pour in the Aperol.', ja: '氷を入れ、アペロールを注ぐ。' },
+        { zh: '加入起泡酒与苏打水。', en: 'Add sparkling wine and soda.', ja: '泡とソーダを加える。' },
+        { zh: '轻搅，放一片橙子。', en: 'Stir gently and add an orange slice.', ja: '軽く混ぜ、オレンジを添える。' }
+      ],
+      vocab: ['wine', 'water', 'bitter', 'mix']
+    },
+    {
+      id: 'c-bloody-mary', emoji: '🍅', color: '#F2C8B8', accent: '#B8402B',
+      name: { zh: '血腥玛丽', en: 'Bloody Mary', ja: 'ブラッディメアリー' },
+      category: '经典', tags: ['伏特加', '辣'], difficulty: 2, time: 8,
+      unlockXp: 300, xpReward: 35,
+      intro: {
+        zh: '番茄汁与伏特加的咸辣早午餐之选。',
+        en: 'A savory, spicy vodka and tomato juice brunch classic.',
+        ja: 'トマトジュースとウォッカのピリッとしたカクテル。'
+      },
+      ingredients: [
+        { zh: '伏特加', en: 'vodka', ja: 'ウォッカ', amount: '45ml / 45ml / 45ml' },
+        { zh: '番茄汁', en: 'tomato juice', ja: 'トマトジュース', amount: '90ml / 90ml / 90ml' },
+        { zh: '柠檬汁', en: 'lemon juice', ja: 'レモンジュース', amount: '15ml / 15ml / 15ml' },
+        { zh: '辣椒', en: 'chili', ja: '唐辛子', amount: '少许 / a dash / 少々' },
+        { zh: '盐', en: 'salt', ja: '塩', amount: '少许 / a pinch / 少々' }
+      ],
+      steps: [
+        { zh: '杯口用柠檬擦湿，蘸一圈盐。', en: 'Wet the rim with lemon and dip in salt.', ja: 'グラスの縁をレモンで湿らせ、塩をつける。' },
+        { zh: '加冰，倒入伏特加与番茄汁。', en: 'Add ice; pour in vodka and tomato juice.', ja: '氷とウォッカ、トマトジュースを。' },
+        { zh: '加入柠檬汁与辣椒，轻搅。', en: 'Add lemon juice and chili; stir gently.', ja: 'レモンと唐辛子を加え、軽く混ぜる。' },
+        { zh: '用芹菜或柠檬装饰。', en: 'Garnish with celery or lemon.', ja: 'セロリやレモンで飾る。' }
+      ],
+      vocab: ['tomato', 'lemon', 'chili', 'spicy', 'salt', 'mix']
+    },
+    {
+      id: 'c-martini', emoji: '🍸', color: '#E8EFE8', accent: '#5A7A5A',
+      name: { zh: '马天尼', en: 'Martini', ja: 'マティーニ' },
+      category: '经典', tags: ['金酒', '经典'], difficulty: 2, time: 6,
+      unlockXp: 440, xpReward: 45,
+      intro: {
+        zh: '鸡尾酒之王，金酒与干味美思的极简优雅。',
+        en: 'The king of cocktails — gin and dry vermouth, pure elegance.',
+        ja: 'カクテルの王様。ジンとドライベルモットのシンプルさ。'
+      },
+      ingredients: [
+        { zh: '金酒', en: 'gin', ja: 'ジン', amount: '60ml / 60ml / 60ml' },
+        { zh: '干味美思', en: 'dry vermouth', ja: 'ドライベルモット', amount: '10ml / 10ml / 10ml' },
+        { zh: '橄榄', en: 'olive', ja: 'オリーブ', amount: '1-2 颗 / 1-2 / 1-2個' }
+      ],
+      steps: [
+        { zh: '调酒杯中加冰，倒入金酒与味美思。', en: 'Add ice to a mixing glass; pour gin and vermouth.', ja: '氷を入れ、ジンとベルモットを注ぐ。' },
+        { zh: '搅拌约 30 秒至冰凉。', en: 'Stir about 30 seconds until chilled.', ja: '30秒ほどよく混ぜる。' },
+        { zh: '滤入冰镇马天尼杯，放橄榄。', en: 'Strain into a chilled glass; add olives.', ja: '冷やしたグラスに注ぎ、オリーブを。' }
+      ],
+      vocab: ['bitter', 'mix', 'glass']
     }
   ],
 
