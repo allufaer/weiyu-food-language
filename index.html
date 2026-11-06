@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#FFFBF5" />
+  <title>味语 WeiYu · 在餐桌上学一门语言</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- 侧边导航（桌面） -->
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand__mark">味</div>
+        <div class="brand__text">
+          <div class="brand__name">味语 <span>WeiYu</span></div>
+          <div class="brand__tag">餐桌上的语言课</div>
+        </div>
+      </div>
+      <nav class="nav" id="nav">
+        <button class="nav__item is-active" data-view="home"><span class="nav__icon">🏠</span><span class="nav__label">首页</span></button>
+        <button class="nav__item" data-view="recipes"><span class="nav__icon">📖</span><span class="nav__label">菜谱</span></button>
+        <button class="nav__item" data-view="cocktails"><span class="nav__icon">🍹</span><span class="nav__label">调酒</span></button>
+        <button class="nav__item" data-view="learn"><span class="nav__icon">📚</span><span class="nav__label">学习</span></button>
+        <button class="nav__item" data-view="kitchen"><span class="nav__icon">🍳</span><span class="nav__label">我的厨房</span></button>
+        <button class="nav__item" data-view="rewards"><span class="nav__icon">⭐</span><span class="nav__label">成就激励</span></button>
+      </nav>
+      <div class="sidebar__foot">
+        <div class="xp-ring" id="xp-ring-sidebar">
+          <div class="xp-ring__bar"><span class="xp-ring__fill" id="xp-fill-sidebar"></span></div>
+          <div class="xp-ring__meta">
+            <div class="xp-ring__lvl" id="xp-lvl-sidebar">Lv.1</div>
+            <div class="xp-ring__xp" id="xp-num-sidebar">0 XP</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- 主区域 -->
+    <div class="main">
+      <header class="topbar">
+        <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+        <div class="topbar__title">
+          <h1 id="page-title">首页</h1>
+        </div>
+        <div class="topbar__tools">
+          <div class="seg" role="tablist" aria-label="学习目标语言">
+            <button class="seg__btn is-active" data-lang="en">EN</button>
+            <button class="seg__btn" data-lang="ja">日本語</button>
+          </div>
+          <label class="switch" title="激励模式">
+            <input type="checkbox" id="incentive-toggle" checked />
+            <span class="switch__track"><span class="switch__thumb"></span></span>
+            <span class="switch__label">激励模式</span>
+          </label>
+        </div>
+      </header>
+
+      <main class="content" id="view-root" tabindex="-1"></main>
+    </div>
+  </div>
+
+  <!-- 移动端底部导航 -->
+  <nav class="tabbar" id="tabbar">
+    <button class="tabbar__item is-active" data-view="home"><span>🏠</span><em>首页</em></button>
+    <button class="tabbar__item" data-view="recipes"><span>📖</span><em>菜谱</em></button>
+    <button class="tabbar__item" data-view="cocktails"><span>🍹</span><em>调酒</em></button>
+    <button class="tabbar__item" data-view="learn"><span>📚</span><em>学习</em></button>
+    <button class="tabbar__item" data-view="kitchen"><span>🍳</span><em>厨房</em></button>
+    <button class="tabbar__item" data-view="rewards"><span>⭐</span><em>成就</em></button>
+  </nav>
+
+  <div class="modal-root" id="modal-root"></div>
+  <div class="toast-root" id="toast-root"></div>
+  <div class="float-root" id="float-root"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
