@@ -333,16 +333,24 @@
     if (ui.learnPhase === 'flash') return renderFlash();
     if (ui.learnPhase === 'quiz') return renderQuiz();
     // list
-    const cards = DATA.lessons.map(lessonCard).join('');
+    const basic = DATA.lessons.filter((l) => l.group === 'basic');
+    const food = DATA.lessons.filter((l) => l.group !== 'basic');
     return `
       <div class="section-head">
         <div>
           <h2>把语言煮进味道里</h2>
-          <p>每个课程围绕一组餐桌上的高频词，用抽认卡记住，再用测验巩固。完成课程即可获得 XP。</p>
+          <p>从日常基础到餐桌词汇，用抽认卡记住、测验巩固。切换目标语言，英语和日语都能学。完成课程即可获得 XP。</p>
         </div>
         <span class="pill pill--learn">目标语言：${state.targetLang === 'en' ? 'English' : '日本語'}</span>
       </div>
-      <div class="lesson-grid">${cards}</div>
+      <div class="section-head" style="margin-top:6px">
+        <div><h2>🌱 基础语言</h2><p>日常会话最常用的句子与表达，从零开口</p></div>
+      </div>
+      <div class="lesson-grid">${basic.map(lessonCard).join('')}</div>
+      <div class="section-head" style="margin-top:30px">
+        <div><h2>🍳 美食语言</h2><p>围绕餐桌的食材、动作与味道词汇</p></div>
+      </div>
+      <div class="lesson-grid">${food.map(lessonCard).join('')}</div>
       <div class="section-head">
         <div><h2>🎯 综合测验</h2><p>从全部词库随机抽题，检验你的学习成果。</p></div>
       </div>
